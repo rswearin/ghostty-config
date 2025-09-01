@@ -5,12 +5,12 @@ macOS Ghostty tiling setup
 
 ## Setup
 
-1. Open the Ghostty config file with  
-   **`⌘ + ,`** (Command + Comma) inside Ghostty.
+1. Open the Ghostty config file with **`⌘ + ,`** (Command + Comma) inside Ghostty.
 
-2. Paste the configuration **after the comment block message**.  
+2. Paste the configuration **after the comment block message**. 
 
-# --- Looks (minimal change) ---
+```
+# Looks
 font-family = Iosevka
 window-padding-x = 4
 window-padding-y = 4
@@ -18,7 +18,7 @@ background-opacity = 1.0
 cursor-style = bar
 theme = OneHalfDark
 
-# --- Leader-based tiling (Ctrl+Space as leader) ---
+# Leader-based tiling (Ctrl+Space as leader)
 # Splits
 keybind = ctrl+space>l=new_split:left
 keybind = ctrl+space>r=new_split:right
@@ -92,7 +92,3 @@ keybind = ctrl+space>o=open_config
 
 * `Ctrl + Space, r` → reload config
 * `Ctrl + Space, o` → open config
-
-### Quick Terminal
-
-* \`⌘ + \`\` → drop-down terminal (requires Accessibility permission on macOS)
