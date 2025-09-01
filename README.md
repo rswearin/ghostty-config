@@ -51,6 +51,15 @@ keybind = ctrl+space>]=next_tab
 # QoL
 keybind = ctrl+space>r=reload_config
 keybind = ctrl+space>o=open_config
+
+# Quick Terminal (macOS)
+# Global drop-down on ⌘+`
+keybind = global:cmd+grave_accent=toggle_quick_terminal
+quick-terminal-position = bottom
+quick-terminal-screen = main
+quick-terminal-autohide = true
+quick-terminal-animation-duration = 0.20
+macos-non-native-fullscreen = true
 ```
 
 ---
@@ -92,3 +101,7 @@ keybind = ctrl+space>o=open_config
 
 * `Ctrl + Space, r` → reload config
 * `Ctrl + Space, o` → open config
+
+### Quick Terminal (macOS)
+
+* `⌘ + ` → for global quick terminal (requires Accessibility permission on macOS - grant macOS Accessibility when prompted or enable in Settings → Privacy & Security → Accessibility)
