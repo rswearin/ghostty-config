@@ -104,4 +104,4 @@ macos-non-native-fullscreen = true
 
 ### Quick Terminal (macOS)
 
-* `⌘ + ` → for global quick terminal (requires Accessibility permission on macOS - grant macOS Accessibility when prompted or enable in Settings → Privacy & Security → Accessibility)
+* `⌘ + backtick` → for global quick terminal (requires Accessibility permission on macOS - grant macOS Accessibility when prompted or enable in Settings → Privacy & Security → Accessibility)
