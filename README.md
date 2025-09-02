@@ -20,23 +20,23 @@ theme = OneHalfDark
 
 # Leader-based tiling (Ctrl+Space as leader)
 # Splits
-keybind = ctrl+space>l=new_split:left
-keybind = ctrl+space>r=new_split:right
-keybind = ctrl+space>u=new_split:up
-keybind = ctrl+space>d=new_split:down
-keybind = ctrl+space>a=new_split:auto
+keybind = ctrl+space>s>l=new_split:left
+keybind = ctrl+space>s>r=new_split:right
+keybind = ctrl+space>s>u=new_split:up
+keybind = ctrl+space>s>d=new_split:down
+keybind = ctrl+space>s>a=new_split:auto
 
-# Navigate (uppercase)
-keybind = ctrl+space>L=goto_split:left
-keybind = ctrl+space>R=goto_split:right
-keybind = ctrl+space>U=goto_split:up
-keybind = ctrl+space>D=goto_split:down
+# Navigate
+keybind = ctrl+space>n>l=goto_split:left
+keybind = ctrl+space>n>r=goto_split:right
+keybind = ctrl+space>n>u=goto_split:up
+keybind = ctrl+space>n>d=goto_split:down
 
-# Resize (Shift+direction)
-keybind = ctrl+space>shift+l=resize_split:left,30
-keybind = ctrl+space>shift+r=resize_split:right,30
-keybind = ctrl+space>shift+u=resize_split:up,30
-keybind = ctrl+space>shift+d=resize_split:down,30
+# Resize
+keybind = ctrl+space>r>l=resize_split:left,30
+keybind = ctrl+space>r>r=resize_split:right,30
+keybind = ctrl+space>r>u=resize_split:up,30
+keybind = ctrl+space>r>d=resize_split:down,30
 
 # Layout management
 keybind = ctrl+space>e=equalize_splits
@@ -49,7 +49,7 @@ keybind = ctrl+space>[=previous_tab
 keybind = ctrl+space>]=next_tab
 
 # QoL
-keybind = ctrl+space>r=reload_config
+keybind = ctrl+space>c=reload_config
 keybind = ctrl+space>o=open_config
 
 # Quick Terminal (macOS)
@@ -60,6 +60,7 @@ quick-terminal-screen = main
 quick-terminal-autohide = true
 quick-terminal-animation-duration = 0.20
 macos-non-native-fullscreen = true
+
 ```
 3. Optional shell customizations
 
@@ -89,22 +90,25 @@ source ~/.zshrc
 
 ### Splits
 
-* `Ctrl + Space, l` → new split left
-* `Ctrl + Space, r` → new split right
-* `Ctrl + Space, u` → new split up
-* `Ctrl + Space, d` → new split down
-* `Ctrl + Space, a` → auto split
+* `Ctrl + Space, s, l` → new split left
+* `Ctrl + Space, s, r` → new split right
+* `Ctrl + Space, s, u` → new split up
+* `Ctrl + Space, s, d` → new split down
+* `Ctrl + Space, s, a` → auto split
 
 ### Navigation
 
-* `Ctrl + Space, L` → move focus left
-* `Ctrl + Space, R` → move focus right
-* `Ctrl + Space, U` → move focus up
-* `Ctrl + Space, D` → move focus down
+* `Ctrl + Space, n, l` → move focus left
+* `Ctrl + Space, n, r` → move focus right
+* `Ctrl + Space, n, u` → move focus up
+* `Ctrl + Space, n, d` → move focus down
 
 ### Resize
 
-* `Ctrl + Space, Shift+l/r/u/d` → resize in that direction
+* `Ctrl + Space, r, l` → resize in that direction
+* `Ctrl + Space, r, r` → resize in that direction
+* `Ctrl + Space, r, u` → resize in that direction
+* `Ctrl + Space, r, d` → resize in that direction
 
 ### Layout
 
@@ -120,7 +124,7 @@ source ~/.zshrc
 
 ### QoL
 
-* `Ctrl + Space, r` → reload config
+* `Ctrl + Space, c` → reload config
 * `Ctrl + Space, o` → open config
 
 ### Quick Terminal (macOS)
