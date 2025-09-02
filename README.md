@@ -63,7 +63,8 @@ macos-non-native-fullscreen = true
 ```
 3. Optional shell customizations
 
--> nano ~/.zshrc
+nano ~/.zshrc
+
 Paste in the following:
 ```
 # Colorful zsh prompt
@@ -79,7 +80,9 @@ fi
 PROMPT='%F{green}%n@%m %F{blue}%~ %F{yellow}${vcs_info_msg_0_}%f ➜ '
 zstyle ':vcs_info:git:*' formats '[%b]'
 ```
--> source ~/.zshrc
+source ~/.zshrc
+
+
 ---
 
 ## ⌨️ Keybindings Overview
