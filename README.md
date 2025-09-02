@@ -61,7 +61,25 @@ quick-terminal-autohide = true
 quick-terminal-animation-duration = 0.20
 macos-non-native-fullscreen = true
 ```
+3. Optional shell customizations
 
+-> nano ~/.zshrc
+Paste in the following:
+```
+# Colorful zsh prompt
+autoload -U colors && colors
+autoload -Uz vcs_info
+precmd() { vcs_info }
+setopt prompt_subst
+if [[ "$TERM_PROGRAM" == "ghostty" ]]; then
+  export TERM=xterm-256color
+fi
+
+# Format: username@host path [branch]
+PROMPT='%F{green}%n@%m %F{blue}%~ %F{yellow}${vcs_info_msg_0_}%f ➜ '
+zstyle ':vcs_info:git:*' formats '[%b]'
+```
+-> source ~/.zshrc
 ---
 
 ## ⌨️ Keybindings Overview
