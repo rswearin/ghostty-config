@@ -20,23 +20,23 @@ theme = OneHalfDark
 
 # Leader-based tiling (Ctrl+Space as leader)
 # Splits
-keybind = ctrl+space>s>l=new_split:left
-keybind = ctrl+space>s>r=new_split:right
-keybind = ctrl+space>s>u=new_split:up
-keybind = ctrl+space>s>d=new_split:down
-keybind = ctrl+space>s>a=new_split:auto
+keybind = ctrl+space>s>a=new_split:left
+keybind = ctrl+space>s>d=new_split:right
+keybind = ctrl+space>s>w=new_split:up
+keybind = ctrl+space>s>s=new_split:down
+keybind = ctrl+space>s>z=new_split:auto
 
 # Navigate
-keybind = ctrl+space>n>l=goto_split:left
-keybind = ctrl+space>n>r=goto_split:right
-keybind = ctrl+space>n>u=goto_split:up
-keybind = ctrl+space>n>d=goto_split:down
+keybind = ctrl+space>n>a=goto_split:left
+keybind = ctrl+space>n>d=goto_split:right
+keybind = ctrl+space>n>w=goto_split:up
+keybind = ctrl+space>n>s=goto_split:down
 
 # Resize
-keybind = ctrl+space>r>l=resize_split:left,30
-keybind = ctrl+space>r>r=resize_split:right,30
-keybind = ctrl+space>r>u=resize_split:up,30
-keybind = ctrl+space>r>d=resize_split:down,30
+keybind = ctrl+space>r>a=resize_split:left,30
+keybind = ctrl+space>r>d=resize_split:right,30
+keybind = ctrl+space>r>w=resize_split:up,30
+keybind = ctrl+space>r>s=resize_split:down,30
 
 # Layout management
 keybind = ctrl+space>e=equalize_splits
@@ -90,25 +90,25 @@ source ~/.zshrc
 
 ### Splits
 
-* `Ctrl + Space, s, l` → new split left
-* `Ctrl + Space, s, r` → new split right
-* `Ctrl + Space, s, u` → new split up
-* `Ctrl + Space, s, d` → new split down
-* `Ctrl + Space, s, a` → auto split
+* `Ctrl + Space, s, a` → new split left
+* `Ctrl + Space, s, d` → new split right
+* `Ctrl + Space, s, w` → new split up
+* `Ctrl + Space, s, s` → new split down
+* `Ctrl + Space, s, z` → auto split
 
 ### Navigation
 
-* `Ctrl + Space, n, l` → move focus left
-* `Ctrl + Space, n, r` → move focus right
-* `Ctrl + Space, n, u` → move focus up
-* `Ctrl + Space, n, d` → move focus down
+* `Ctrl + Space, n, a` → move focus left
+* `Ctrl + Space, n, d` → move focus right
+* `Ctrl + Space, n, w` → move focus up
+* `Ctrl + Space, n, s` → move focus down
 
 ### Resize
 
-* `Ctrl + Space, r, l` → resize in that direction
-* `Ctrl + Space, r, r` → resize in that direction
-* `Ctrl + Space, r, u` → resize in that direction
+* `Ctrl + Space, r, a` → resize in that direction
 * `Ctrl + Space, r, d` → resize in that direction
+* `Ctrl + Space, r, w` → resize in that direction
+* `Ctrl + Space, r, s` → resize in that direction
 
 ### Layout
 
